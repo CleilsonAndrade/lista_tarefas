@@ -16,7 +16,7 @@
 * [Licença](#licença)
 
 # 📃 <span id="descrição">Descrição</span>
-Lista de tarefas é uma aplicação simples para cadastro de tarefas, que alem de exibi-las e possível marcar como concluída e a possibilidade de excluir uma a uma ou todas de uma vez, desenvolvido em React para fim de estudos. Os estudos se propõe a entender o funcionamento de componentes, seu ciclo de vida, estados, componentização. Utiliza-se o [**Vite**](https://vitejs.dev/) como servidor de desenvolvimento e localStorage para persistência dos dados.
+Lista de tarefas é uma aplicação simples para cadastro de tarefas, que alem de exibi-las e possível marcar como concluída e a possibilidade de excluir uma a uma ou todas de uma vez, desenvolvido em [**React**](https://react.dev/) para fim de estudos. Os estudos se propõe a entender o funcionamento de componentes, seu ciclo de vida, estados, componentização. Utiliza-se o [**Vite**](https://vitejs.dev/) como servidor de desenvolvimento e localStorage para persistência dos dados.
 
 # 📌 <span id="requisitos">Requisitos Funcionais</span>
 - [x] Cadastro de tarefa<br>
