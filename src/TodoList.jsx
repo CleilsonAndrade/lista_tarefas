@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
-import Icon from './assets/icon.webp'
 import './TodoList.css'
+import Icon from './assets/icon.webp'
 
 export default function App() {
   const listStorage = localStorage.getItem('Lista')
@@ -16,7 +16,7 @@ export default function App() {
     form.preventDefault()
 
     if (!newItem) {
-      alertify.alert('Lista de Tarefas', 'Digite alguma tarefa!');
+      alertify.alert('Lista de Tarefas', 'Adicione alguma tarefa!');
       return
     }
 
@@ -45,7 +45,7 @@ export default function App() {
     const listAux = [...list]
     listAux.splice(index, 1)
     setList(listAux)
-    alertify.error('Tarefa deleta &#9940;')
+    alertify.error('Tarefa excluída &#9940;')
   }
 
   function deleteAllItem() {
@@ -67,7 +67,7 @@ export default function App() {
         <button className="add" type="submit">Adicionar</button>
       </form>
       <div className="todo-list-container">
-        <div style={{ textAlign: 'center' }}>
+        <div>
           {
             list.length < 1
               ?

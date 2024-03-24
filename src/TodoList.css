@@ -15,6 +15,7 @@ h1 {
   font-weight: 900;
   color: #7d83b9;
   text-align: center;
+  font-size: 4rem;
 }
 
 form {
@@ -34,7 +35,7 @@ input {
   padding-left: 30px;
   font-size: 16px;
   border-radius: 10px;
-  color: white;
+  color: #fff;
 }
 
 button.add {
@@ -43,10 +44,10 @@ button.add {
   right: 0;
   background: #363b65;
   border: none;
-  color: white;
+  color: #fff;
   cursor: pointer;
   padding: 10px 25px;
-  height: 62px;
+  height: 60px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   transition: 0.2s;
@@ -55,7 +56,7 @@ button.add {
 }
 
 button.add:hover {
-  color: white;
+  color: #fff;
   background: #363f88;
 }
 
@@ -76,6 +77,8 @@ button.add:hover {
   cursor: pointer;
   transition: 0.2s;
   background: #7d83b9;
+
+  text-align: center;
 }
 
 .item:hover {
@@ -85,9 +88,11 @@ button.add:hover {
 .item span {
   text-align: start;
   width: 100%;
-  color: white;
-  margin-right: 10px;
-  padding: 10px 15px;
+  color: #fff;
+  height: 4rem;
+  line-height: 4rem;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .item.complete {
@@ -104,8 +109,10 @@ button.add:hover {
   text-align: start;
   width: 100%;
   color: #4d506e;
-  margin-right: 10px;
-  padding: 10px 15px;
+  height: 4rem;
+  line-height: 4rem;
+  padding-left: 12px;
+  padding-right: 12px;
   opacity: 0.7;
 
   text-decoration: line-through;
@@ -127,7 +134,7 @@ button.del {
 button.del:hover {
   background: #ff004c;
   border: none;
-  color: white;
+  color: #fff;
   padding: 15px;
   cursor: pointer;
 }
@@ -147,19 +154,19 @@ button.deleteAll {
 
 button.deleteAll:hover {
   background: #ff004c;
-  color: white;
+  color: #fff;
 }
 
-.icon {
-  max-width: 100%;
+div .icon {
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
   form {
-    width: 100%;
+    width: 80%;
   }
 
   .todo-list-container {
-    width: 100%;
+    width: 80%;
   }
 }
