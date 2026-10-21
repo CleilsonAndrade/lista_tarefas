@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react"
 import './TodoList.css'
 import Icon from './assets/icon.webp'
+import { loadList } from './listStorage'
 
 export default function App() {
-  const listStorage = localStorage.getItem('Lista')
-
-  const [list, setList] = useState(listStorage ? JSON.parse(listStorage) : [])
+  const [list, setList] = useState(() => loadList(localStorage))
   const [newItem, setNewItem] = useState("")
 
   useEffect(() => {
